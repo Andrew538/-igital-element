@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Цифровой элемент</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700;900&display=swap"        rel="stylesheet">
+    <link rel="stylesheet" href="./style/mormalize.css">
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+<body>
+   <div class="wrapper">
+       <div class="box-form">
+           <div class="image-form">
+               <img class="image__user-image" src="./image/user-image.png" alt="Фото пользователя" >
+               <span class="image__text">Hello <br> 
+                   my&nbsp;friend</span>
+           </div>
+           <form class="form" novalidate>
+               <div class="form__item">
+                    <label for="name"><span class="form-title">Ваше имя</span></label>
+                    <input type="text" id="name" data-rule="text" placeholder="имя"  class="form__input-name input-style " required minlength="2">                
+                </div>
+            <div class="form__item">
+                <div class="form-title">
+                    <label for="number"><span class="form-title">Телефон</span></label>
+                    <input data-rule="number" id="number" placeholder="Номер телефона" required type="tel" name="telephone" class="form__input-tel input-style">
+                </div>
+            </div>
+            <div class="form__item">
+                <div class="form-title">
+                    <label for="pass"><span class="form-title">Пароль</span></label>
+                    <input data-rule="pass" id="pass" placeholder="" type="password" name="password" required class="form__input-pass input-style">
+                    
+                </div>
+                <ol class="list-pass">
+                    <h4 class="title__list">Требования к паролю</h4>
+                    <li class="list__item">Длина пароля должна быть не менее 6 символов</li>
+                    <li class="list__item">Пароль должен состоять из букв латинского алфавита (A-z), арабских цифр (0-9) и специальных символов, приведенных в п. 4 данных требований.</li>
+                    <li class="list__item">Буквенная часть пароля должна содержать как строчные, так и прописные (заглавные) буквы.</li>
+                    <li class="list__item">Пароль должен содержать не менее одного из следующих символов:
+                        ( . , : ; ? ! * + % - < > @ [ ] { } / \ _ {} $ # ).</li>
+                </ol>
+            </div>
+            <div class="form__item">
+                <div class="survey">
+                    <div class="survey__item">
+                        <input type="radio"  class="survey__input">
+                        <label class="survey__text"><span>Люблю свою работу</span></label>
+                    </div>
+                    <div class="survey__item">
+                        <input  type="radio" checked class="survey__input">
+                        <label class="survey__text-very"><span>Очень люблю свою работу</span></label>
+                    </div>
+                </div>
+                </div> 
+                <button type="submit" class="form__button"><span class="button-text"> Отправит анкету</span></button>
+            </form>       
+        </div> 
+   </div>
+    <script src="./JS/main.js"></script>
+ </body>
+ </html>
+        
+    
+        
